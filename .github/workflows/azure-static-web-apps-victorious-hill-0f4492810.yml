@@ -31,7 +31,7 @@ jobs:
           app_location: "/"            # Your app's root folder
           api_location: ""             # No API folder
           output_location: ""          # No build output folder
-          app_build_command: ""        # Skip the build process
+    
          
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
