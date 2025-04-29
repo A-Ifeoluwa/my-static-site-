@@ -32,8 +32,7 @@ jobs:
           api_location: ""             # No API folder
           output_location: ""          # No build output folder
           app_build_command: ""        # Skip the build process
-          platform: "static"           # Force static site, bypasses Node.js runtime
-
+         
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
     runs-on: ubuntu-latest
